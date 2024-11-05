@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root{
+    --p-color:#444;
+    --txt-color:tomato;
+    --btn-color:linear-gradient(90deg, #fc5858, crimson);
+    --font-family:'Poppins', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+/* reset code end */
+/* header start */
+header{
+    background-color: #EDEDED;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+.hamburger {
+    display: none;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 9%;
+}
+.logo h1{
+    font-size: 30px;
+    font-weight: 900;
+    color: #f83b3b;
+    font-family: "Berkshire Swash", cursive;
+}
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    padding: 20px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+}
+.nav-links a:nth-child(1){
+    color: tomato;
+}
+
+/* header end */
+/* banner start */
+#banner{
+    margin-top: 4rem;
+    padding-bottom: 7rem;
+}
+.banner-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+.banner-txt{
+    width: 75%;
+}
+.banner-txt h1{
+    color: #363958;
+    font-size: 5rem;
+    line-height: 90px;
+    margin-bottom: 20px;
+}
+.banner-txt h2{
+    font-size: 4rem;
+    line-height: 80px;
+    margin-bottom: 20px;
+    color: tomato;
+}
+.banner-txt p{
+    color: var(--p-color);
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+.banner-btn{
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background-image: var(--btn-color);
+    position: relative;
+    z-index: 1;
+}
+.banner-btn::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgb(98, 97, 97);
+    border-radius: 5px;
+    z-index: -1;
+    transition: .8s;
+}
+.banner-btn:hover::after{
+    width: 100%;
+}
+
+/* banner end */
+/* about section start */
+#about{
+    background-color: #FDEAEC;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    padding: 80px 0;
+}
+.about-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+    align-items: center;
+}
+.about-txt{
+    font-family: var(--font-family);
+}
+.about-txt h1{
+    font-size: 40px;
+    margin-bottom: 1.4rem;
+    color: rgba(0, 0, 0, .7);
+}
+.about-txt p{
+    margin-bottom: 4rem;
+    text-align: justify;
+    line-height: 25px;
+    font-size: 1.2rem;
+    color: var(--p-color);
+}
+
+/* about section end */
+/* recipe section start */
+#recipe{
+    margin-top: 3rem;
+    font-family: var(--font-family);
+}
+.recipe-head{
+    text-align: center;
+}
+.recipe-head h1{
+    color: rgba(0, 0, 0, .8);
+    line-height: 8rem;
+    font-size: 4rem;
+}
+.recipe-head p{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    font-weight: 600;
+}
+.recipe-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    margin-top: 70px;
+}
+.recipe-card{
+    padding: 3%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    margin-left: 25px;
+    margin-right: 25px;
+    transition: .8s;
+    margin-top: 30px;
+}
+.recipe-card img{
+    border-radius: 50px;
+    padding: 5%;
+}
+.recipe-card h1{
+    margin: 15px 0;
+    padding-left: 6%;
+    font-size: 1.8rem;
+}
+.recipe-card p{
+    margin: 15px 0;
+    padding-left: 6%;
+    color: var(--p-color);
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: justify;
+}
+.recipe-card:hover{
+    transform: translateY(-20px);
+}
+
+/* recipe section end */
+/* delivery section start */
+#delivery{
+    margin-top: 100px;
+    font-family: var(--font-family);
+}
+.delivery-head{
+    text-align: center;
+}
+.delivery-head h1{
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: var(--p-color);
+}
+.delivery-head p{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+.delivery-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    justify-content: center;
+    align-items: center;
+}
+.delivery-card{
+    padding: 15%;
+    text-align: center;
+    gap: 5rem;
+}
+.delivery-card h1{
+    margin: 10px 0;
+    font-size: 2rem;
+}
+.delivery-card img{
+    transition: .8s;
+}
+.delivery-card:hover img{
+    transform: scale(1.05);
+}
+/* delivery section end */
+/* follower  section start */
+#follower{
+    margin-top: 70px;
+}
+.follower-content{
+    width: 80%;
+    margin: 5rem auto;
+    padding:6rem  8rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 10px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sub h1{
+    font-family: "Berkshire Swash", cursive;
+    font-size: 70px;
+    color: #333;
+}
+.sub p{
+    color: var(--p-color);
+    font-family: var(--font-family);
+    line-height: 25px;
+}
+/* follower section end */
+/* footer section start */
+footer{
+    background-color: #222222;
+    text-align: center;
+    padding: 2rem 0;
+    font-family: var(--font-family);
+}
+footer h1{
+    color: #f83b3b;
+    margin-bottom: 2rem;
+    font-family: "Berkshire Swash", cursive;
+    font-size: 3rem;
+}
+footer p{
+    color: #888;
+    margin-bottom: 4rem;
+}

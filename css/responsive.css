@@ -1,0 +1,174 @@
+/* tablet style */
+@media (max-width: 868px){
+.hamburger {
+    display: block;
+    font-size: 2rem;
+}
+.nav-links{
+    display: none;
+}
+/* nav links section end */
+/* banner section start */
+#banner{
+    margin-top: 4rem;
+    padding-bottom: 2rem;
+}
+.banner-container{
+    display: grid;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+.banner-txt{
+    width: 100%;
+}
+.banner-txt h1{
+    color: #363958;
+    font-size: 4rem;
+}
+.banner-txt h2{
+    font-size: 3rem;
+}
+.banner-txt p{
+    width: 80%;
+    font-size: 1rem;
+}
+/* banner section end */
+/* about section start */
+#about{
+    padding: 1% 0;
+}
+.about-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+    text-align: center;
+}
+.about-txt h1{
+    font-size: 30px;
+    margin-bottom: .5rem;
+    color: rgba(0, 0, 0, .7);
+}
+.about-txt p{
+    margin-bottom: 1rem;
+    text-align: justify;
+    line-height: 20px;
+    font-size: 1rem;
+}
+.about-img img{
+    width: 8rem;
+    margin: auto;
+}
+/* about section end */
+/* follower section start */
+#follower{
+    margin-top: 50px;
+}
+.follower-content{
+    width: 90%;
+    margin: 5rem auto;
+    padding:4rem  6rem;
+    display: flex;
+}
+.sub h1{
+    font-family: "Berkshire Swash", cursive;
+    font-size: 50px;
+    color: #333;
+}
+
+}
+/* phone style */
+@media (min-width: 320px) and (max-width: 777px){
+    #banner{
+        margin-top: 3rem;
+        padding-bottom: 2rem;
+    }
+    .banner-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        font-family: 'Poppins', sans-serif;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner-txt{
+        margin-bottom: 20px;
+    }
+    .banner-txt h1{
+        color: #363958;
+        font-size: 2rem;
+        line-height: 40px;
+    }
+    .banner-txt h2{
+        font-size: 2rem;
+        line-height: 20px;
+    }
+    .banner-txt p{
+        width: 100%;
+        font-size: 1rem;
+    }
+    /* banner end */
+    /* recipe section start */
+#recipe{
+    margin-top: 3rem;
+    font-family: var(--font-family);
+}
+.recipe-head{
+    text-align: center;
+}
+.recipe-head h1{
+    color: rgba(0, 0, 0, .8);
+    line-height: 5rem;
+    font-size: 2rem;
+}
+.recipe-head p{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    font-weight: 600;
+}
+/* recipe section end */
+/* delivery section start */
+#delivery{
+    margin-top: 100px;
+    font-family: var(--font-family);
+}
+.delivery-head{
+    text-align: center;
+}
+.delivery-head h1{
+    font-size: 2rem;
+}
+.delivery-head p{
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+}
+/* delivery section end */
+/* follower section start */
+#follower{
+    margin-top: 50px;
+}
+.follower-content{
+    width: 100%;
+    margin: 5rem auto;
+    padding:2rem  3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.sub h1{
+    font-family: "Berkshire Swash", cursive;
+    font-size: 30px;
+    color: #333;
+}
+.sub p{
+    line-height: 17px;
+}
+/* follower section start */
+/* footer start */
+footer p{
+    color: #888;
+    margin-bottom: 2rem;
+}
+
+}
